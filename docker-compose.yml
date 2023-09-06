@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: demo
+    ports:
+      - 3306:3306
+
